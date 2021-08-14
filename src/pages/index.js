@@ -1,10 +1,38 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import Project from "../components/Project.js";
+// import Project from "../components/Project.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+
+const projects = [
+  {
+    name: "MyToast",
+    description: "lorem ipsum",
+    projURL: "",
+    imgSrc: "https://placekitten.com/800/600",
+    imgAlt: "kitten",
+    color: "bg-gradient-to-r from-green-400 to-blue-500",
+  },
+  {
+    name: "Toast Tips Manager",
+    description: "lorem ipsum",
+    projURL: "",
+    imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
+    imgAlt: "dog",
+    color: "bg-gradient-to-r from-green-400 to-blue-500",
+  },
+  {
+    name: "Simplified Payroll",
+    description: "lorem ipsum",
+    projURL: "",
+    imgSrc:
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
+    imgAlt: "cheetah",
+    color: "bg-gradient-to-r from-green-400 to-blue-500",
+  },
+];
 
 const IndexPage = () => {
   return (
@@ -43,7 +71,17 @@ const IndexPage = () => {
           designing technology for restaurants at Toast.
         </p>
       </main>
-      <Project />
+      {projects.map((proj) => {
+        return (
+          <a href={proj.projURL}>
+            <div
+              className={"w-10/12 h-72 mx-auto mb-8 rounded-lg " + proj.color}
+            >
+              <img src={proj.imgSrc} alt={proj.imgAlt} />
+            </div>
+          </a>
+        );
+      })}
     </div>
   );
 };
