@@ -10,33 +10,36 @@ const projects = [
   {
     name: "MyToast",
     description: "lorem ipsum",
-    projURL: "",
-    imgSrc: "https://placekitten.com/800/600",
-    imgAlt: "kitten",
+    projURL:
+      "https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa",
+    // imgSrc: "https://placekitten.com/800/600",
+    imgAlt: "MyToast app screen",
     color: "bg-gradient-to-r from-green-400 to-blue-500",
   },
   {
     name: "Toast Tips Manager",
     description: "lorem ipsum",
-    projURL: "",
-    imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
-    imgAlt: "dog",
+    projURL:
+      "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
+    // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
+    imgAlt: "Tips Manager screen",
     color: "bg-gradient-to-r from-green-400 to-blue-500",
   },
   {
     name: "Simplified Payroll",
     description: "lorem ipsum",
-    projURL: "",
-    imgSrc:
-      "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
-    imgAlt: "cheetah",
+    projURL:
+      "https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15",
+    // imgSrc:
+    //   "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
+    imgAlt: "Payroll web app screen",
     color: "bg-gradient-to-r from-green-400 to-blue-500",
   },
 ];
 
 const IndexPage = () => {
   return (
-    <div className="p-4 sm:p-10 text-gray-500">
+    <div className="p-6 sm:p-10 text-gray-500">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Steven Bruno</title>
@@ -49,7 +52,7 @@ const IndexPage = () => {
           rel="stylesheet"
         />
       </Helmet>
-      <nav className="mb-20 flex flex-wrap justify-between space-y-1">
+      <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between space-y-1">
         <div className="flex flex-col mb-2">
           <p className="text-2xl font-serif font-semibold tracking-wide text-gray-600">
             Steven Bruno
@@ -62,26 +65,33 @@ const IndexPage = () => {
           <FontAwesomeIcon icon={faGithubSquare} size="3x" />
         </div>
       </nav>
-      <main>
-        <h1 className="text-4xl font-serif mb-4 text-gray-600">
-          Hi, I'm Steven
-        </h1>
-        <p className="mb-40 leading-relaxed max-w-xl">
-          I'm a product designer based in New York City. Currently, I'm
-          designing technology for restaurants at Toast.
-        </p>
-      </main>
-      {projects.map((proj) => {
-        return (
-          <a href={proj.projURL}>
-            <div
-              className={"w-10/12 h-72 mx-auto mb-8 rounded-lg " + proj.color}
-            >
-              <img src={proj.imgSrc} alt={proj.imgAlt} />
-            </div>
-          </a>
-        );
-      })}
+      <div className="mx-auto max-w-screen-lg lg:pl-8">
+        <main>
+          <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
+            Hi, I'm Steven
+          </h1>
+          <p className="mb-40 leading-relaxed max-w-xl">
+            I'm a product designer based in New York City. Currently, I'm
+            designing technology for restaurants at Toast.
+          </p>
+        </main>
+        <div className="flex flex-wrap justify-start sm:justify-start gap-16 lg:gap-24">
+          {projects.map((proj) => {
+            return (
+              <a className="" href={proj.projURL}>
+                <div
+                  className={
+                    "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg " +
+                    proj.color
+                  }
+                >
+                  <img src={proj.imgSrc} alt={proj.imgAlt} />
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

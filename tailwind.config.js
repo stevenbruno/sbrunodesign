@@ -6,6 +6,14 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+      minWidth: {
+        72: "18rem",
+        80: "20rem",
+        96: "24rem",
+      },
+      minHeight: {
+        72: "18rem",
+      },
     },
     fontFamily: {
       serif: ["Cormorant", "ui-serif", "Georgia"],
