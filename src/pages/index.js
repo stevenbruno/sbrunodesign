@@ -52,14 +52,14 @@ const IndexPage = () => {
           rel="stylesheet"
         />
       </Helmet>
-      <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between space-y-1">
+      <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between items-center space-y-1">
         <div className="flex flex-col mb-2">
           <p className="text-2xl font-serif font-semibold tracking-wide text-gray-600">
             Steven Bruno
           </p>
           <p className="text-sm uppercase">sbruno636@gmail.com</p>
         </div>
-        <div className="flex space-x-3 text-gray-400">
+        <div className="flex space-x-3 text-gray-400 text-sm md:text-xs">
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
           <FontAwesomeIcon icon={faDev} size="3x" />
           <FontAwesomeIcon icon={faGithubSquare} size="3x" />
