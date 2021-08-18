@@ -68,7 +68,7 @@ const IndexPage = () => {
       <div className="mx-auto max-w-screen-lg lg:pl-8">
         <main>
           <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
-            Hi, I'm Steven
+            This site is under construction
           </h1>
           <p className="mb-40 leading-relaxed max-w-xl">
             I'm a product designer based in New York City. Currently, I'm
