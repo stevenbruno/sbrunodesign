@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-// import Project from "../components/Project.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
