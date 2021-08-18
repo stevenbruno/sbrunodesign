@@ -17,15 +17,6 @@ const projects = [
     color: "bg-gradient-to-r from-green-400 to-blue-500",
   },
   {
-    name: "Toast Tips Manager",
-    description: "lorem ipsum",
-    projURL:
-      "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
-    // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
-    imgAlt: "Tips Manager screen",
-    color: "bg-gradient-to-r from-green-400 to-blue-500",
-  },
-  {
     name: "Simplified Payroll",
     description: "lorem ipsum",
     projURL:
@@ -33,6 +24,15 @@ const projects = [
     // imgSrc:
     //   "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
     imgAlt: "Payroll web app screen",
+    color: "bg-gradient-to-r from-green-400 to-blue-500",
+  },
+  {
+    name: "Toast Tips Manager",
+    description: "lorem ipsum",
+    projURL:
+      "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
+    // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
+    imgAlt: "Tips Manager screen",
     color: "bg-gradient-to-r from-green-400 to-blue-500",
   },
 ];
