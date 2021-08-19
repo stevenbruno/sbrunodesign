@@ -32,13 +32,13 @@ const projects = [
       "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
     // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
     imgAlt: "Tips Manager screen",
-    color: "bg-gradient-to-r from-green-200 to-blue-200",
+    color: "bg-gradient-to-r from-blue-100 to-indigo-200",
   },
 ];
 
 const IndexPage = () => {
   return (
-    <div className="p-6 sm:p-10 text-gray-500">
+    <div className="p-6 sm:p-10 text-gray-600 text-lg">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Steven Bruno</title>
@@ -51,7 +51,7 @@ const IndexPage = () => {
           rel="stylesheet"
         />
       </Helmet>
-      <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between items-center space-y-1">
+      <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between items-center gap-x-6 space-y-1">
         <div className="flex flex-col mb-2">
           <p className="text-2xl font-serif uppercase text-gray-600">
             Steven Bruno
@@ -66,7 +66,7 @@ const IndexPage = () => {
           <FontAwesomeIcon icon={faGithubSquare} size="3x" />
         </div>
       </nav>
-      <div className="mx-auto max-w-screen-lg lg:pl-8">
+      <div className="mx-auto max-w-screen-lg lg:pl-8 mb-24">
         <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
           This site is under construction
         </h1>
@@ -90,6 +90,37 @@ const IndexPage = () => {
             );
           })}
         </div>
+      </div>
+      <div className="mx-auto max-w-screen-sm">
+        <h2 className="text-4xl font-serif text-gray-900 mb-4">About me</h2>
+        <p className="mb-4">
+          I grew up in Los Angeles then moved to Chicago to study Civil
+          Engineering and Architectural Design at Northwestern University. My
+          grand visions of becoming an architect took a backseat once I
+          discovered web design. The ability to imagine and build your vision in
+          three days as opposed to three years was too enticing to ignore.
+        </p>
+        <p className="mb-4">
+          Once I completed my undergraduate degree, I landed a Junior UX
+          Designer position at a startup called Stratex. There, I designed HR
+          and payroll software. Toast acquired Stratex in 2019 and I have been
+          designing software for restaurants ever since.
+        </p>
+        <p className="mb-4">
+          I’m a UX generalist comfortable working across the design ecosystem. I
+          am equally at home leading research initiatives and facilitating
+          design workshops as I am building prototypes and committing production
+          front-end code.
+        </p>
+        <p className="mb-4">
+          In my free time, I enjoy running, reading, soccer, chess, and trying
+          new restaurants. Lately, I’ve been diving deep into climate and
+          crypto.
+        </p>
+        <p className="mb-4">
+          I designed and built this website with Figma, React, Gatsby, and
+          TailwindCSS.
+        </p>
       </div>
     </div>
   );
