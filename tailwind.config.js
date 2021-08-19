@@ -14,6 +14,9 @@ module.exports = {
       minHeight: {
         72: "18rem",
       },
+      height: {
+        supertall: "520px",
+      },
     },
     fontFamily: {
       serif: ["Cormorant", "ui-serif", "Georgia"],
