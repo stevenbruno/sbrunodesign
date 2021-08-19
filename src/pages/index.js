@@ -13,7 +13,7 @@ const projects = [
       "https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa",
     // imgSrc: "https://placekitten.com/800/600",
     imgAlt: "MyToast app screen",
-    color: "bg-gradient-to-r from-yellow-100 to-red-200",
+    color: "bg-gradient-to-r from-yellow-50 to-yellow-100",
   },
   {
     name: "Simplified Payroll",
@@ -23,7 +23,7 @@ const projects = [
     // imgSrc:
     //   "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
     imgAlt: "Payroll web app screen",
-    color: "bg-gradient-to-r from-purple-200 via-pink-200 to-red-200",
+    color: "bg-gradient-to-r from-purple-50 to-pink-100",
   },
   {
     name: "Toast Tips Manager",
@@ -38,12 +38,15 @@ const projects = [
 
 const IndexPage = () => {
   return (
-    <div className="p-6 sm:p-10 text-gray-600 text-lg">
+    <div className="p-6 sm:p-10 text-gray-600 text-xl bg-gradient-to-b from-white via-white to-blue-50">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Steven Bruno</title>
         <link rel="canonical" href="https:stevenbruno.design" />
-        <html lang="en" />
+        <html
+          lang="en"
+          className="bg-gradient-to-b from-white via-white to-blue-50"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -67,7 +70,7 @@ const IndexPage = () => {
         </div>
       </nav>
       <div className="mx-auto max-w-screen-lg lg:pl-8 mb-24">
-        <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
+        <h1 className="text-5xl sm:text-7xl font-serif mb-4 text-gray-800">
           This site is under construction
         </h1>
         <p className="mb-40 leading-relaxed max-w-xl">
@@ -92,7 +95,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="mx-auto max-w-screen-sm">
-        <h2 className="text-4xl font-serif text-gray-900 mb-4">About me</h2>
+        <h2 className="text-4xl font-serif text-gray-900 mb-6">About me</h2>
         <p className="mb-4">
           I grew up in Los Angeles then moved to Chicago to study Civil
           Engineering and Architectural Design at Northwestern University. My
