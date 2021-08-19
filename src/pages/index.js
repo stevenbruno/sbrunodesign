@@ -43,7 +43,8 @@ const IndexPage = () => {
       <StaticImage
         src="../images/bluecurve2.svg"
         alt="wavy blue background"
-        className="absolute -z-10 h-supertall"
+        className="-z-10 h-supertall"
+        style={{ position: "absolute" }}
       />
       <div className="p-6 sm:p-10 text-gray-700 text-xl">
         <Helmet>
