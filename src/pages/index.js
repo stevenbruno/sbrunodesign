@@ -13,7 +13,7 @@ const projects = [
       "https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa",
     // imgSrc: "https://placekitten.com/800/600",
     imgAlt: "MyToast app screen",
-    color: "bg-gradient-to-r from-green-400 to-blue-500",
+    color: "bg-gradient-to-r from-yellow-100 to-red-200",
   },
   {
     name: "Simplified Payroll",
@@ -23,7 +23,7 @@ const projects = [
     // imgSrc:
     //   "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
     imgAlt: "Payroll web app screen",
-    color: "bg-gradient-to-r from-green-400 to-blue-500",
+    color: "bg-gradient-to-r from-purple-200 via-pink-200 to-red-200",
   },
   {
     name: "Toast Tips Manager",
@@ -32,7 +32,7 @@ const projects = [
       "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
     // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
     imgAlt: "Tips Manager screen",
-    color: "bg-gradient-to-r from-green-400 to-blue-500",
+    color: "bg-gradient-to-r from-green-200 to-blue-200",
   },
 ];
 
@@ -53,10 +53,12 @@ const IndexPage = () => {
       </Helmet>
       <nav className="mb-20 lg:mb-32 flex flex-wrap border-b-2 border-gray-300 pb-4 justify-between items-center space-y-1">
         <div className="flex flex-col mb-2">
-          <p className="text-2xl font-serif font-semibold tracking-wide text-gray-600">
+          <p className="text-2xl font-serif uppercase text-gray-600">
             Steven Bruno
           </p>
-          <p className="text-sm uppercase">sbruno636@gmail.com</p>
+          <p className="text-sm font-serif tracking-wider uppercase">
+            sbruno636@gmail.com
+          </p>
         </div>
         <div className="flex space-x-3 text-gray-400 text-sm md:text-xs">
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
@@ -65,15 +67,13 @@ const IndexPage = () => {
         </div>
       </nav>
       <div className="mx-auto max-w-screen-lg lg:pl-8">
-        <main>
-          <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
-            This site is under construction
-          </h1>
-          <p className="mb-40 leading-relaxed max-w-xl">
-            I'm a product designer based in New York City. Currently, I'm
-            designing technology for restaurants at Toast.
-          </p>
-        </main>
+        <h1 className="text-5xl sm:text-7xl font-serif font-light mb-4 text-gray-800">
+          This site is under construction
+        </h1>
+        <p className="mb-40 leading-relaxed max-w-xl">
+          I'm a product designer based in New York City. Currently, I'm
+          designing technology for restaurants at Toast.
+        </p>
         <div className="flex flex-wrap justify-start sm:justify-start gap-16 lg:gap-24">
           {projects.map((proj) => {
             return (
