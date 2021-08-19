@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.stevenbruno.design",
-    title: "StevenBrunoDesign",
+    title: "Steven Bruno",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -13,8 +13,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: `./src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
       __key: "images",
     },

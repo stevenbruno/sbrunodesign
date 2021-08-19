@@ -6,37 +6,6 @@ import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 
-const projects = [
-  {
-    name: "MyToast",
-    description: "lorem ipsum",
-    projURL:
-      "https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa",
-    // imgSrc: "https://placekitten.com/800/600",
-    imgAlt: "MyToast app screen",
-    color: "bg-gradient-to-r from-yellow-50 to-yellow-100",
-  },
-  {
-    name: "Simplified Payroll",
-    description: "lorem ipsum",
-    projURL:
-      "https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15",
-    // imgSrc:
-    //   "https://upload.wikimedia.org/wikipedia/commons/0/09/TheCheethcat.jpg",
-    imgAlt: "Payroll web app screen",
-    color: "bg-gradient-to-r from-purple-50 to-pink-100",
-  },
-  {
-    name: "Toast Tips Manager",
-    description: "lorem ipsum",
-    projURL:
-      "https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad",
-    // imgSrc: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
-    imgAlt: "Tips Manager screen",
-    color: "bg-gradient-to-r from-blue-100 to-indigo-200",
-  },
-];
-
 const IndexPage = () => {
   return (
     <>
@@ -86,21 +55,42 @@ const IndexPage = () => {
             designing technology for restaurants at Toast.
           </p>
           <div className="flex flex-wrap justify-start sm:justify-start gap-16 lg:gap-24">
-            {projects.map((proj) => {
-              return (
-                <a className="" href={proj.projURL}>
-                  <div
-                    key={proj.name}
-                    className={
-                      "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg " +
-                      proj.color
-                    }
-                  >
-                    <img src={proj.imgSrc} alt={proj.imgAlt} />
-                  </div>
-                </a>
-              );
-            })}
+            <a href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15">
+              <div
+                className={
+                  "py-16 px-2 min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-yellow-50 to-yellow-100"
+                }
+              >
+                <StaticImage
+                  src="../images/payrolldash.png"
+                  alt="Payroll Dashboard Mockup"
+                />
+              </div>
+            </a>
+            <a href="https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa">
+              <div
+                className={
+                  "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-purple-50 to-pink-100"
+                }
+              >
+                {/* <StaticImage
+                  src="../images/payrolldash.png"
+                  alt="MyToast App Mockup"
+                /> */}
+              </div>
+            </a>
+            <a href="https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad">
+              <div
+                className={
+                  "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-blue-100 to-indigo-200"
+                }
+              >
+                {/* <StaticImage
+                  src="../images/payrolldash.png"
+                  alt="Tips Manager Mockup"
+                /> */}
+              </div>
+            </a>
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm">
