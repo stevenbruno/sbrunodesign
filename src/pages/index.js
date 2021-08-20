@@ -64,6 +64,7 @@ const IndexPage = () => {
                 <StaticImage
                   src="../images/payrolldash.png"
                   alt="Payroll Dashboard Mockup"
+                  placeholder="blurred"
                 />
               </div>
             </a>
@@ -76,6 +77,7 @@ const IndexPage = () => {
                 {/* <StaticImage
                   src="../images/payrolldash.png"
                   alt="MyToast App Mockup"
+                  placeholder="blurred"
                 /> */}
               </div>
             </a>
@@ -88,6 +90,7 @@ const IndexPage = () => {
                 {/* <StaticImage
                   src="../images/payrolldash.png"
                   alt="Tips Manager Mockup"
+                  placeholder="blurred"
                 /> */}
               </div>
             </a>
