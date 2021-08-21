@@ -23,22 +23,21 @@ const IndexPage = () => {
   };
   return (
     <>
-      <StaticImage
-        src="../images/bluecurve2.svg"
-        alt="wavy blue background"
-        className="-z-10 h-supertall"
-        style={{ position: "absolute" }}
-        placeholder="blurred"
-      />
-      <div className="sm:p-8 sm:text-lg text-gray-600">
+      <div
+        className="bg-gradient-to-br 
+        from-green-100 via-indigo-50 to-blue-50 w-screen h-supertall sm:h-4/5 absolute -z-10"
+      ></div>
+      <div className="relative w-2/3 max-lg -z-9 hidden lg:block">
+        <div className="absolute top-0 left-8 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob bg-indigo-50 rounded-full"></div>
+        <div className="absolute top-24 left-32 top-16 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob animate-blob animation-delay-3000 bg-blue-50 rounded-full"></div>
+        <div className="absolute top-0 left-48 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob animation-delay-6000 delay-700 bg-purple-50 rounded-full"></div>
+      </div>
+      <div className="sm:text-lg text-gray-600">
         <Helmet>
           <meta charSet="utf-8" />
           <title>Steven Bruno</title>
           <link rel="canonical" href="https:stevenbruno.design" />
-          <html
-            lang="en"
-            className="bg-gradient-to-b from-white via-white to-blue-50"
-          />
+          <html lang="en" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
@@ -46,7 +45,7 @@ const IndexPage = () => {
             rel="stylesheet"
           />
         </Helmet>
-        <header className="flex flex-col items-center mb-48 md:mb-64 pt-24 lg:pr-16">
+        <header className="flex flex-col items-center mb-16 md:mb-64 pt-32 lg:pr-16 pb-16">
           <h1 className="text-5xl sm:text-sbxl font-serif mb-4 text-gray-700 text-center font-semibold">
             Steven Bruno
           </h1>
@@ -92,7 +91,7 @@ const IndexPage = () => {
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"
           >
-            <div className="w-5/6 max-w-lg mx-auto">
+            <div className="w-11/12 max-w-lg mx-auto">
               <StaticImage
                 src="../images/Payroll.png"
                 alt="Payroll Dashboard Mockup"
@@ -104,7 +103,7 @@ const IndexPage = () => {
             href="https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa"
             className="max-w-max"
           >
-            <div className="w-5/6 max-w-lg mx-auto">
+            <div className="w-11/12 max-w-lg mx-auto">
               <StaticImage
                 src="../images/MyToast2.png"
                 alt="MyToast App Mockup"
@@ -116,7 +115,7 @@ const IndexPage = () => {
             href="https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad"
             className="max-w-max"
           >
-            <div className="w-5/6 max-w-lg mx-auto">
+            <div className="w-11/12 max-w-lg mx-auto">
               <StaticImage
                 src="../images/Tips.png"
                 alt="Tips Manager Mockup"
@@ -169,10 +168,10 @@ const IndexPage = () => {
             , soccer, chess, and trying new restaurants. Lately, I’ve been
             diving deep into climate and crypto.
           </p>
-          <p className="mb-4 text-gray-400 italic">
+          <p className="mb-8 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
             TailwindCSS. Let me know if you find any bugs or have general
-            feedback. <span className="not-italic">&#128578;</span>
+            feedback. :)
           </p>
         </div>
       </div>
