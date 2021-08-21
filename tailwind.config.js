@@ -24,6 +24,9 @@ module.exports = {
       fontSize: {
         sbxl: "5.5rem",
       },
+      screens: {
+        projwrap: "1168px",
+      },
     },
     fontFamily: {
       serif: ["Cormorant", "ui-serif", "Georgia"],

@@ -6,6 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -29,7 +30,7 @@ const IndexPage = () => {
         style={{ position: "absolute" }}
         placeholder="blurred"
       />
-      <div className="p-6 sm:p-10 sm:text-lg text-gray-600">
+      <div className="sm:p-8 sm:text-lg text-gray-600">
         <Helmet>
           <meta charSet="utf-8" />
           <title>Steven Bruno</title>
@@ -45,7 +46,7 @@ const IndexPage = () => {
             rel="stylesheet"
           />
         </Helmet>
-        <header className="flex flex-col items-center mb-48 pt-24 lg:pr-16">
+        <header className="flex flex-col items-center mb-48 md:mb-64 pt-24 lg:pr-16">
           <h1 className="text-5xl sm:text-sbxl font-serif mb-4 text-gray-700 text-center font-semibold">
             Steven Bruno
           </h1>
@@ -75,54 +76,64 @@ const IndexPage = () => {
               >
                 sbruno636@gmail.com <FontAwesomeIcon icon={faCopy} />
               </button>
-              <p className={`text-sm ${clicked ? "visible" : "invisible"}`}>
-                &#10004; Copied to clipboard
+              <p
+                className={`text-sm text-green-700 ${
+                  clicked ? "visible" : "invisible"
+                }`}
+              >
+                <FontAwesomeIcon icon={faCheck} className="text-green-700" />{" "}
+                Copied to clipboard
               </p>
             </div>
           </div>
         </header>
-        <div className="flex flex-wrap max-w-4xl mx-auto sm:items-start md:items-center gap-16 lg:gap-24 mb-40 md:mb-56">
-          <a href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15">
-            <div
-              className={
-                "py-16 px-2 min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-yellow-50 to-yellow-100"
-              }
-            >
+        <div className="flex flex-wrap max-w-full mx-auto gap-16 sm:gap-y-32 justify-center items-center mb-40 md:mb-56">
+          <a
+            href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
+            className="max-w-max"
+          >
+            <div className="w-5/6 max-w-lg mx-auto">
               <StaticImage
-                src="../images/payrolldash.png"
+                src="../images/Payroll.png"
                 alt="Payroll Dashboard Mockup"
                 placeholder="blurred"
               />
             </div>
           </a>
-          <a href="https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa">
-            <div
-              className={
-                "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-purple-50 to-pink-100"
-              }
-            >
-              {/* <StaticImage
-                  src="../images/payrolldash.png"
-                  alt="MyToast App Mockup"
-                  placeholder="blurred"
-                /> */}
+          <a
+            href="https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa"
+            className="max-w-max"
+          >
+            <div className="w-5/6 max-w-lg mx-auto">
+              <StaticImage
+                src="../images/MyToast2.png"
+                alt="MyToast App Mockup"
+                placeholder="blurred"
+              />
             </div>
           </a>
-          <a href="https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad">
-            <div
-              className={
-                "min-h-72 min-w-72 max-w-xs sm:max-w-none sm:w-96 sm:h-96 rounded-lg bg-gradient-to-r from-blue-100 to-indigo-200"
-              }
-            >
-              {/* <StaticImage
-                  src="../images/payrolldash.png"
-                  alt="Tips Manager Mockup"
-                  placeholder="blurred"
-                /> */}
+          <a
+            href="https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad"
+            className="max-w-max"
+          >
+            <div className="w-5/6 max-w-lg mx-auto">
+              <StaticImage
+                src="../images/Tips.png"
+                alt="Tips Manager Mockup"
+                placeholder="blurred"
+              />
             </div>
           </a>
+          <div className="hidden projwrap:block w-5/6 max-w-lg">
+            {" "}
+            <StaticImage
+              src="../images/Spacer.png"
+              alt="Blank space for layout"
+              placeholder="none"
+            />
+          </div>
         </div>
-        <div className="mx-auto max-w-screen-sm">
+        <div className="mx-auto max-w-screen-sm px-4">
           <h2 className="text-4xl font-serif text-gray-900 mb-6">About me</h2>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
@@ -131,27 +142,32 @@ const IndexPage = () => {
               Northwestern University
             </span>
             . My grand visions of becoming an architect took a backseat once I
-            discovered web design. The ability to imagine and build your vision
-            in three days as opposed to three years was too enticing to ignore.
+            discovered web design. The ability to imagine and construct a vision
+            in three days instead of three years was too enticing to ignore.
           </p>
           <p className="mb-4">
-            Once I completed my undergraduate degree, I landed a Junior UX
-            Designer position at a startup called Stratex. There, I designed HR
+            Once I completed my undergraduate degree, I began working as a
+            Junior UX Designer at a startup called Stratex. There, I designed HR
             and payroll software. Toast acquired Stratex in 2019 and I have been
             designing software for restaurants ever since.
           </p>
           <p className="mb-4">
             I’m a{" "}
-            <span className="font-semibold text-gray-700">UX generalist</span>{" "}
-            comfortable working across the design ecosystem. I am equally at
-            home leading research initiatives and facilitating design workshops
-            as I am building prototypes and committing production front-end
-            code.
+            <span className="font-semibold text-gray-700">UX generalist</span>.
+            Whether its leading research initiatives, facilitating design
+            workshops, building prototypes, or committing production front-end
+            code, I'm comfortable working across the design ecosystem.
           </p>
           <p className="mb-24">
-            In my free time, I enjoy running, reading, soccer, chess, and trying
-            new restaurants. Lately, I’ve been diving deep into climate and
-            crypto.
+            In my free time, I enjoy running,{" "}
+            <a
+              href=" https://www.goodreads.com/stevenbruno "
+              className="underline"
+            >
+              reading
+            </a>
+            , soccer, chess, and trying new restaurants. Lately, I’ve been
+            diving deep into climate and crypto.
           </p>
           <p className="mb-1 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
