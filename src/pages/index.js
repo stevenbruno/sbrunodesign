@@ -174,7 +174,6 @@ const IndexPage = () => {
             TailwindCSS. Let me know if you find any bugs or have general
             feedback. <span className="not-italic">&#128578;</span>
           </p>
-          <p className="mb-4 text-gray-400 italic">sbruno636@gmail.com</p>
         </div>
       </div>
     </>
