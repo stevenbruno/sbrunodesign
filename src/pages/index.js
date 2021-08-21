@@ -153,7 +153,7 @@ const IndexPage = () => {
           <p className="mb-4">
             I’m a{" "}
             <span className="font-semibold text-gray-700">UX generalist</span>{" "}
-            with experience in every aspect of the design process. I'm equally
+            with diverse experience across the design ecosystem. I'm equally
             confident leading research initiatives, facilitating design
             workshops, building prototypes, and even committing production
             front-end code.
