@@ -169,7 +169,7 @@ const IndexPage = () => {
             , soccer, chess, and trying new restaurants. Lately, I’ve been
             diving deep into climate and crypto.
           </p>
-          <p className="mb-1 text-gray-400 italic">
+          <p className="mb-4 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
             TailwindCSS. Let me know if you find any bugs or have general
             feedback. <span className="not-italic">&#128578;</span>
