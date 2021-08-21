@@ -7,6 +7,9 @@ import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 const IndexPage = () => {
   const [clicked, setClicked] = useState(false);
