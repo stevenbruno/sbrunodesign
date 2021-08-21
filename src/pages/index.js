@@ -27,6 +27,7 @@ const IndexPage = () => {
         alt="wavy blue background"
         className="-z-10 h-supertall"
         style={{ position: "absolute" }}
+        placeholder="blurred"
       />
       <div className="p-6 sm:p-10 sm:text-lg text-gray-600">
         <Helmet>
@@ -152,14 +153,12 @@ const IndexPage = () => {
             new restaurants. Lately, I’ve been diving deep into climate and
             crypto.
           </p>
-          <p className="mb-1 text-gray-500 font-light italic">
+          <p className="mb-1 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
             TailwindCSS. Let me know if you find any bugs or have general
             feedback. <span className="not-italic">&#128578;</span>
           </p>
-          <p className="mb-4 text-gray-500 font-light italic">
-            sbruno636@gmail.com
-          </p>
+          <p className="mb-4 text-gray-400 italic">sbruno636@gmail.com</p>
         </div>
       </div>
     </>
