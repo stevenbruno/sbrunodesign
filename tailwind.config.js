@@ -17,6 +17,13 @@ module.exports = {
       height: {
         supertall: "520px",
       },
+      colors: {
+        emailblue: "#0262A8",
+        emailbg: "#C8DFF1",
+      },
+      fontSize: {
+        sbxl: "5.5rem",
+      },
     },
     fontFamily: {
       serif: ["Cormorant", "ui-serif", "Georgia"],
@@ -24,7 +31,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: { backgroundColor: ["active"] },
   },
   plugins: [],
 };
