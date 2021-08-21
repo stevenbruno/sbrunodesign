@@ -24,13 +24,13 @@ const IndexPage = () => {
   return (
     <>
       <div
-        className="bg-gradient-to-br 
-        from-green-100 via-indigo-50 to-blue-50 w-screen h-supertall sm:h-4/5 absolute -z-10"
+        className="bg-gradient-to-b 
+        from-purple-100 via-indigo-50 w-screen h-supertall sm:h-4/5 absolute -z-10"
       ></div>
-      <div className="relative w-2/3 max-lg -z-9 hidden lg:block">
-        <div className="absolute top-0 left-8 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob bg-indigo-50 rounded-full"></div>
-        <div className="absolute top-24 left-32 top-16 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob animate-blob animation-delay-3000 bg-blue-50 rounded-full"></div>
-        <div className="absolute top-0 left-48 w-96 h-96 mix-blend-multiply blur-xl filter animate-blob animation-delay-6000 delay-700 bg-purple-50 rounded-full"></div>
+      <div className="relative w-1/2 mr-auto -z-9 hidden lg:block">
+        <div className="absolute top-0 left-8 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob bg-indigo-50 rounded-full"></div>
+        <div className="absolute top-0 left-16 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob animate-blob animation-delay-2000 bg-blue-50 rounded-full"></div>
+        <div className="absolute top-0 left-24 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob animation-delay-4000 bg-purple-50 rounded-full"></div>
       </div>
       <div className="sm:text-lg text-gray-600">
         <Helmet>
@@ -41,7 +41,7 @@ const IndexPage = () => {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600;800&display=swap"
             rel="stylesheet"
           />
         </Helmet>
@@ -152,10 +152,11 @@ const IndexPage = () => {
           </p>
           <p className="mb-4">
             I’m a{" "}
-            <span className="font-semibold text-gray-700">UX generalist</span>.
-            Whether its leading research initiatives, facilitating design
-            workshops, building prototypes, or committing production front-end
-            code, I'm comfortable working across the design ecosystem.
+            <span className="font-semibold text-gray-700">UX generalist</span>{" "}
+            with experience in every aspect of the design process. I'm equally
+            confident leading research initiatives, facilitating design
+            workshops, building prototypes, and even committing production
+            front-end code.
           </p>
           <p className="mb-24">
             In my free time, I enjoy running,{" "}
@@ -165,8 +166,7 @@ const IndexPage = () => {
             >
               reading
             </a>
-            , soccer, chess, and trying new restaurants. Lately, I’ve been
-            diving deep into climate and crypto.
+            , soccer, chess, and trying new restaurants.
           </p>
           <p className="mb-8 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and

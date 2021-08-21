@@ -17,6 +17,7 @@ module.exports = {
       },
       height: {
         supertall: "520px",
+        blaze: "420px",
       },
       colors: {
         emailblue: "#0262A8",
@@ -30,13 +31,18 @@ module.exports = {
         projwrap: "1168px",
       },
       animation: {
-        blob: "blob 10s infinite",
+        blob: "blob 12s linear infinite",
       },
       keyframes: {
         blob: {
           "0%": { transform: "translate(0px, 0px) scale(1)" },
-          "33%": { transform: "translate(240px, -80px) scale(1.2)" },
-          "66%": { transform: "translate(160px, -160px) scale(.8)" },
+          "25%": {
+            transform: "translate(100px, -160px) scale(1.3) skewY(15deg)",
+          },
+          "50%": { transform: "translate(200px, 0px) scale(1.6)" },
+          "75%": {
+            transform: "translate(100px, 160px) scale(1.3) skewY(-15deg)",
+          },
           "100%": { transform: "translate(0px, 0px) scale(1)" },
         },
       },
@@ -46,6 +52,7 @@ module.exports = {
       },
       width: {
         fourhundo: "400%",
+        blaze: "420",
       },
     },
     variants: {
