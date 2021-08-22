@@ -28,9 +28,9 @@ const IndexPage = () => {
         from-purple-100 via-indigo-50 w-screen h-supertall sm:h-4/5 absolute -z-10"
       ></div>
       <div className="relative w-1/2 mr-auto -z-9 hidden lg:block">
-        <div className="absolute top-0 left-8 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob bg-indigo-50 rounded-full"></div>
-        <div className="absolute top-0 left-16 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob animate-blob animation-delay-2000 bg-blue-50 rounded-full"></div>
-        <div className="absolute top-0 left-24 w-96 h-96 mix-blend-multiply blur-lg filter animate-blob animation-delay-4000 bg-purple-50 rounded-full"></div>
+        <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob bg-indigo-50 rounded-full"></div>
+        <div className="absolute top-48 left-24 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob animate-blob animation-delay-2000 bg-blue-100 rounded-full"></div>
+        <div className="absolute top-24 left-48 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob animation-delay-4000 bg-purple-100 rounded-full"></div>
       </div>
       <div className="sm:text-lg text-gray-600">
         <Helmet>

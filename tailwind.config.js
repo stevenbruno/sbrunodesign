@@ -31,17 +31,17 @@ module.exports = {
         projwrap: "1168px",
       },
       animation: {
-        blob: "blob 12s linear infinite",
+        blob: "blob 9s linear infinite",
       },
       keyframes: {
         blob: {
           "0%": { transform: "translate(0px, 0px) scale(1)" },
           "25%": {
-            transform: "translate(100px, -160px) scale(1.3) skewY(15deg)",
+            transform: "translate(400px, -160px) scale(1.3) skewY(15deg)",
           },
-          "50%": { transform: "translate(200px, 0px) scale(1.6)" },
+          "50%": { transform: "translate(800px, 0px) scale(1.6)" },
           "75%": {
-            transform: "translate(100px, 160px) scale(1.3) skewY(-15deg)",
+            transform: "translate(400px, 160px) scale(1.3) skewY(-15deg)",
           },
           "100%": { transform: "translate(0px, 0px) scale(1)" },
         },
