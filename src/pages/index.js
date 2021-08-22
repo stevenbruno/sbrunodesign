@@ -25,12 +25,12 @@ const IndexPage = () => {
     <>
       <div
         className="bg-gradient-to-b 
-        from-purple-100 via-indigo-50 w-screen h-supertall sm:h-4/5 absolute -z-10"
+        from-indigo-100 w-screen h-supertall sm:h-4/5 absolute -z-10"
       ></div>
-      <div className="relative w-1/2 mr-auto -z-9 hidden lg:block">
-        <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob bg-indigo-50 rounded-full"></div>
-        <div className="absolute top-48 left-24 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob animate-blob animation-delay-2000 bg-blue-100 rounded-full"></div>
-        <div className="absolute top-24 left-48 w-96 h-96 mix-blend-multiply blur-2xl filter animate-blob animation-delay-4000 bg-purple-100 rounded-full"></div>
+      <div className="relative w-2/3 mr-auto -z-9 hidden lg:block">
+        <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob bg-indigo-50 rounded-full"></div>
+        <div className="absolute top-48 left-16 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animate-blob animation-delay-2000 bg-blue-100 rounded-full"></div>
+        <div className="absolute top-24 left-24 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animation-delay-4000 bg-purple-100 rounded-full"></div>
       </div>
       <div className="sm:text-lg text-gray-600">
         <Helmet>
@@ -76,11 +76,11 @@ const IndexPage = () => {
                 sbruno636@gmail.com <FontAwesomeIcon icon={faCopy} />
               </button>
               <p
-                className={`text-sm text-green-700 ${
+                className={`text-sm text-purple-700 ${
                   clicked ? "visible" : "invisible"
                 }`}
               >
-                <FontAwesomeIcon icon={faCheck} className="text-green-700" />{" "}
+                <FontAwesomeIcon icon={faCheck} className="text-purple-600" />{" "}
                 Copied to clipboard
               </p>
             </div>
