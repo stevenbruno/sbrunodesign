@@ -39,7 +39,7 @@ module.exports = {
           "25%": {
             transform: "translate(400px, -160px) scale(1.3) skewY(15deg)",
           },
-          "50%": { transform: "translate(800px, 0px) scale(1.6)" },
+          "50%": { transform: "translate(760px, 0px) scale(1.6)" },
           "75%": {
             transform: "translate(400px, 160px) scale(1.3) skewY(-15deg)",
           },
