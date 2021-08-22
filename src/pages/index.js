@@ -170,8 +170,7 @@ const IndexPage = () => {
           </p>
           <p className="mb-8 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
-            TailwindCSS. Let me know if you find any bugs or have general
-            feedback. :)
+            TailwindCSS. Let me know if you find any bugs. :)
           </p>
         </div>
       </div>
