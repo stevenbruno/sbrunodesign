@@ -37,11 +37,11 @@ module.exports = {
         blob: {
           "0%": { transform: "translate(0px, 0px) scale(1)" },
           "25%": {
-            transform: "translate(400px, -160px) scale(1.3) skewY(15deg)",
+            transform: "translate(300px, -500px) scale(1.3) skewY(15deg)",
           },
-          "50%": { transform: "translate(800px, 0px) scale(1.6)" },
+          "50%": { transform: "translate(760px, 0px) scale(1.6)" },
           "75%": {
-            transform: "translate(400px, 160px) scale(1.3) skewY(-15deg)",
+            transform: "translate(400px, 240px) scale(1.3) skewY(-15deg)",
           },
           "100%": { transform: "translate(0px, 0px) scale(1)" },
         },
