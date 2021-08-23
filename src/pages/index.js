@@ -166,7 +166,8 @@ const IndexPage = () => {
             >
               reading
             </a>
-            , soccer, chess, and trying new restaurants.
+            , soccer, chess, and trying new restaurants. Recently, I've been
+            diving deep into climate and crypto.
           </p>
           <p className="mb-8 text-gray-400 italic">
             I designed and developed this website with Figma, React, Gatsby, and
