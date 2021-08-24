@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -25,13 +25,13 @@ const IndexPage = () => {
     <>
       <div
         className="bg-gradient-to-b 
-        from-indigo-100 w-screen h-supertall sm:h-4/5 absolute -z-10"
+        from-babyblue w-screen h-supertall sm:h-4/5 absolute -z-10"
       ></div>
-      <div className="relative w-2/3 mr-auto -z-9 hidden lg:block">
+      {/* <div className="relative w-2/3 mr-auto -z-9 hidden lg:block">
         <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob bg-indigo-100 rounded-full"></div>
         <div className="absolute top-48 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animate-blob animation-delay-2000 bg-blue-100 rounded-full"></div>
         <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animation-delay-4000 bg-purple-100 rounded-full"></div>
-      </div>
+      </div> */}
       <div className="sm:text-lg text-gray-600">
         <Helmet>
           <meta charSet="utf-8" />
@@ -45,7 +45,7 @@ const IndexPage = () => {
             rel="stylesheet"
           />
         </Helmet>
-        <header className="flex flex-col items-center mb-16 md:mb-64 pt-32 lg:pr-16 pb-16">
+        <header className="flex flex-col items-center mb-24 md:mb-96 pt-32 lg:pr-16 pb-16">
           <h1 className="text-5xl sm:text-sbxl font-serif mb-4 text-gray-700 text-center font-semibold">
             Steven Bruno
           </h1>
@@ -84,6 +84,9 @@ const IndexPage = () => {
                 Copied to clipboard
               </p>
             </div>
+          </div>
+          <div className="hidden md:flex flex-col h-screen absolute top-0 justify-end text-gray-500 pb-12">
+            <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
           </div>
         </header>
         <div className="flex flex-wrap max-w-full mx-auto gap-16 sm:gap-y-32 justify-center items-center mb-40 md:mb-56">
