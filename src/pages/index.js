@@ -58,7 +58,7 @@ const IndexPage = () => {
           <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-lg sm:text-xl text-gray-500 italic">
             Product Designer @{" "}
             <a
-              href="https://pos.toasttab.com/"
+              href="https://pos.toasttab.com/about"
               className="toast hover:text-toast"
             >
               Toast
