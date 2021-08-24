@@ -26,6 +26,7 @@ module.exports = {
         toast: "#ff4c00",
       },
       fontSize: {
+        fourrem: "4rem",
         sbxl: "5rem",
       },
       screens: {

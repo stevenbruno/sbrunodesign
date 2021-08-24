@@ -50,12 +50,12 @@ const IndexPage = () => {
           />
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-48 pt-32 lg:pr-12 pb-16">
-          <div className="text-6xl sm:text-8xl mb-1">
+          <div className="text-fourrem sm:text-8xl">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-cursive">
               Steven Bruno
             </span>
           </div>
-          <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-lg sm:text-xl text-gray-500 italic">
+          <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
             Product Designer @{" "}
             <a
               href="https://pos.toasttab.com/about"
@@ -64,8 +64,7 @@ const IndexPage = () => {
               Toast
             </a>{" "}
             <span className="hidden sm:inline">
-              <span className="text-gray-400">&nbsp;&nbsp;•&nbsp;&nbsp;</span>{" "}
-              based in NYC
+              <span className="text-gray-400">&nbsp;•&nbsp;</span> based in NYC
             </span>
           </p>
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mx-auto">
