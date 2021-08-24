@@ -44,19 +44,26 @@ const IndexPage = () => {
             href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600;800&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+            rel="stylesheet"
+          />
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-64 pt-32 lg:pr-12 pb-16">
-          <div class="text-5xl sm:text-sbxl mb-4 font-bold">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 animate-gradient">
+          <div className="text-6xl sm:text-8xl mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-cursive">
               Steven Bruno
             </span>
           </div>
-          <p className="mb-24 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none">
-            Steven is a{" "}
-            <span className="font-semibold text-gray-600">
-              product designer
-            </span>{" "}
-            at Toast in New York City
+          <p className="mb-24 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-sm sm:text-base text-gray-500 italic">
+            Product Designer @{" "}
+            <a
+              href="https://pos.toasttab.com/"
+              className="toast hover:text-toast"
+            >
+              Toast
+            </a>{" "}
+            <span className="text-gray-400">•</span> based in NYC
           </p>
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mx-auto">
             <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-center max-w-max">
@@ -135,7 +142,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-4xl font-serif text-gray-900 mb-6">About me</h2>
+          <h2 className="text-xl font-medium text-blue-500 mb-6">About me</h2>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
