@@ -46,10 +46,12 @@ const IndexPage = () => {
           />
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-96 pt-32 lg:pr-16 pb-16">
-          <h1 className="text-5xl sm:text-sbxl font-serif mb-4 text-gray-700 text-center font-semibold">
-            Steven Bruno
-          </h1>
-          <p className="mb-24 text-center max-w-xs tracking-wide px-4 sm:max-w-none">
+          <div class="text-5xl sm:text-sbxl mb-4 font-bold te ...">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
+              Steven Bruno
+            </span>
+          </div>
+          <p className="mb-24 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none">
             Steven is a{" "}
             <span className="font-semibold text-gray-600">
               product designer
@@ -89,7 +91,7 @@ const IndexPage = () => {
             <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
           </div>
         </header>
-        <div className="flex flex-wrap max-w-full mx-auto gap-16 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
+        <div className="flex flex-wrap max-w-full mx-auto gap-24 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"

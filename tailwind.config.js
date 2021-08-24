@@ -25,7 +25,7 @@ module.exports = {
         babyblue: "#EEF2F8",
       },
       fontSize: {
-        sbxl: "5.5rem",
+        sbxl: "4.75rem",
       },
       screens: {
         projwrap: "1168px",
