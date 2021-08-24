@@ -89,7 +89,7 @@ const IndexPage = () => {
             <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
           </div>
         </header>
-        <div className="flex flex-wrap max-w-full mx-auto gap-16 sm:gap-y-32 justify-center items-center mb-40 md:mb-56">
+        <div className="flex flex-wrap max-w-full mx-auto gap-16 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"
