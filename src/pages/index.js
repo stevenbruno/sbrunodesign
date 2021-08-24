@@ -45,8 +45,8 @@ const IndexPage = () => {
             rel="stylesheet"
           />
         </Helmet>
-        <header className="flex flex-col items-center mb-24 md:mb-96 pt-32 lg:pr-16 pb-16">
-          <div class="text-5xl sm:text-sbxl mb-4 font-bold te ...">
+        <header className="flex flex-col items-center mb-24 md:mb-64 pt-32 lg:pr-12 pb-16">
+          <div class="text-5xl sm:text-sbxl mb-4 font-bold">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
               Steven Bruno
             </span>
@@ -86,9 +86,6 @@ const IndexPage = () => {
                 Copied to clipboard
               </p>
             </div>
-          </div>
-          <div className="hidden md:flex flex-col h-screen absolute top-0 justify-end text-gray-500 pb-12">
-            <FontAwesomeIcon icon={faArrowDown} className="animate-bounce" />
           </div>
         </header>
         <div className="flex flex-wrap max-w-full mx-auto gap-24 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
