@@ -47,7 +47,7 @@ const IndexPage = () => {
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-64 pt-32 lg:pr-12 pb-16">
           <div class="text-5xl sm:text-sbxl mb-4 font-bold">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-500">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 animate-gradient">
               Steven Bruno
             </span>
           </div>

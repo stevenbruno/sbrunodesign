@@ -33,6 +33,9 @@ module.exports = {
       animation: {
         blob: "blob 9s linear infinite",
       },
+      animation: {
+        gradient: "gradient 4s linear infinite",
+      },
       keyframes: {
         blob: {
           "0%": { transform: "translate(0px, 0px) scale(1)" },
@@ -44,6 +47,11 @@ module.exports = {
             transform: "translate(400px, 240px) scale(1.3) skewY(-15deg)",
           },
           "100%": { transform: "translate(0px, 0px) scale(1)" },
+        },
+        gradient: {
+          "50%": {
+            color: "#2563EB",
+          },
         },
       },
       fontFamily: {
