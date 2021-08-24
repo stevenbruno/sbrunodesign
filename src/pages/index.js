@@ -55,7 +55,7 @@ const IndexPage = () => {
               Steven Bruno
             </span>
           </div>
-          <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-base sm:text-xl text-gray-500 italic">
+          <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-lg sm:text-xl text-gray-500 italic">
             Product Designer @{" "}
             <a
               href="https://pos.toasttab.com/"
