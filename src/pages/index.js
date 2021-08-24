@@ -145,9 +145,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-xl font-semibold text-purple-800 mb-6">
-            About me
-          </h2>
+          <h2 className="text-xl font-semibold text-blue-900 mb-6">About me</h2>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
