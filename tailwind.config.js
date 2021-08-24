@@ -23,9 +23,10 @@ module.exports = {
         emailblue: "#0262A8",
         emailbg: "#C8DFF1",
         babyblue: "#EEF2F8",
+        toast: "#ff4c00",
       },
       fontSize: {
-        sbxl: "4.75rem",
+        sbxl: "5rem",
       },
       screens: {
         projwrap: "1168px",
@@ -57,6 +58,7 @@ module.exports = {
       fontFamily: {
         serif: ["Cormorant", "ui-serif", "Georgia"],
         sans: ["SF Pro Text", "ui-sans-serif", "system-ui"],
+        cursive: ["Allura", "ui-cursive"],
       },
       width: {
         fourhundo: "400%",

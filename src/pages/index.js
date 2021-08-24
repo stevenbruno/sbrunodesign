@@ -50,12 +50,12 @@ const IndexPage = () => {
           />
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-64 pt-32 lg:pr-12 pb-16">
-          <div className="text-6xl sm:text-8xl mb-4">
+          <div className="text-6xl sm:text-sbxl mb-2">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-cursive">
               Steven Bruno
             </span>
           </div>
-          <p className="mb-24 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-sm sm:text-base text-gray-500 italic">
+          <p className="mb-24 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-sm sm:text-lg text-gray-500 italic">
             Product Designer @{" "}
             <a
               href="https://pos.toasttab.com/"
