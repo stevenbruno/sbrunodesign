@@ -27,11 +27,6 @@ const IndexPage = () => {
         className="bg-gradient-to-b 
         from-babyblue w-screen h-supertall sm:h-4/5 absolute -z-10"
       ></div>
-      {/* <div className="relative w-2/3 mr-auto -z-9 hidden lg:block">
-        <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob bg-indigo-100 rounded-full"></div>
-        <div className="absolute top-48 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animate-blob animation-delay-2000 bg-blue-100 rounded-full"></div>
-        <div className="absolute top-24 left-0 w-96 h-96 mix-blend-multiply blur-3xl filter animate-blob animation-delay-4000 bg-purple-100 rounded-full"></div>
-      </div> */}
       <div className="sm:text-lg text-gray-600">
         <Helmet>
           <meta charSet="utf-8" />
@@ -59,7 +54,7 @@ const IndexPage = () => {
               Steven Bruno
             </span>
           </div>
-          <p className="mb-32 sm:mb-96 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
+          <p className="mb-8 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
             Product Designer @{" "}
             <a
               href="https://pos.toasttab.com/about"
@@ -72,17 +67,6 @@ const IndexPage = () => {
             </span>
           </p>
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mx-auto">
-            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-center max-w-max">
-              <a href="https://www.linkedin.com/in/stevenjbruno/">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" />
-              </a>
-              <a href="https://dev.to/stevenbruno">
-                <FontAwesomeIcon icon={faDev} size="3x" />
-              </a>
-              <a href="https://github.com/stevenbruno">
-                <FontAwesomeIcon icon={faGithubSquare} size="3x" />
-              </a>
-            </div>
             <div className="flex flex-col items-center">
               <button
                 className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
@@ -148,7 +132,20 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-4xl font-title text-blue-900 mb-6">About me</h2>
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-y-4 mb-8">
+            <h2 className="text-5xl font-title text-blue-900">About me</h2>
+            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs">
+              <a href="https://www.linkedin.com/in/stevenjbruno/">
+                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+              </a>
+              <a href="https://dev.to/stevenbruno">
+                <FontAwesomeIcon icon={faDev} size="3x" />
+              </a>
+              <a href="https://github.com/stevenbruno">
+                <FontAwesomeIcon icon={faGithubSquare} size="3x" />
+              </a>
+            </div>
+          </div>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
@@ -173,7 +170,7 @@ const IndexPage = () => {
             workshops, building prototypes, and even committing production
             front-end code.
           </p>
-          <p className="mb-24">
+          <p className="mb-20">
             In my free time, I enjoy running,{" "}
             <a
               href=" https://www.goodreads.com/stevenbruno "
