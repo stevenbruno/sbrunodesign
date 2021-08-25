@@ -45,17 +45,21 @@ const IndexPage = () => {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@1,700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap"
             rel="stylesheet"
           />
         </Helmet>
         <header className="flex flex-col items-center mb-24 md:mb-48 pt-32 lg:pr-12 pb-16">
-          <div className="text-fourrem sm:text-8xl">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-cursive">
+          <div className="text-6xl sm:text-sbxl mb-2">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-title">
               Steven Bruno
             </span>
           </div>
-          <p className="mb-32 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
+          <p className="mb-32 sm:mb-96 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
             Product Designer @{" "}
             <a
               href="https://pos.toasttab.com/about"
@@ -144,7 +148,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-xl font-semibold text-blue-900 mb-6">About me</h2>
+          <h2 className="text-4xl font-title text-blue-900 mb-6">About me</h2>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}

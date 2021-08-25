@@ -60,6 +60,7 @@ module.exports = {
         serif: ["Cormorant", "ui-serif", "Georgia"],
         sans: ["SF Pro Text", "ui-sans-serif", "system-ui"],
         cursive: ["Allura", "ui-cursive"],
+        title: ["Unna", "ui-cursive"],
       },
       width: {
         fourhundo: "400%",
