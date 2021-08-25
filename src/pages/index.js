@@ -6,7 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -83,6 +83,13 @@ const IndexPage = () => {
                 Copied to clipboard
               </p>
             </div>
+            <a
+              className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
+              href=""
+              target="_blank"
+            >
+              View resume <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
           </div>
         </header>
         <div className="flex flex-wrap max-w-full mx-auto gap-24 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
