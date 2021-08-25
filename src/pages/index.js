@@ -140,7 +140,7 @@ const IndexPage = () => {
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
           <div className="flex justify-between items-end mb-8">
-            <h2 className="text-4xl sm:text-5xl font-title text-blue-900">
+            <h2 className="text-3xl sm:text-4xl font-title text-indigo-500">
               About me
             </h2>
             <div className="flex space-x-3 text-gray-400 text-sm md:text-xs pb-1">
@@ -158,12 +158,11 @@ const IndexPage = () => {
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
-            <span className="font-semibold text-gray-700">
-              Northwestern University
-            </span>
-            . My grand visions of becoming an architect took a backseat once I
-            discovered web design. The ability to imagine and construct a vision
-            in three days instead of three years was too enticing to ignore.
+            <b>Northwestern University</b>. My grand visions of becoming an
+            architect took a backseat once I discovered web design in my
+            computer science and HCI courses. The ability to imagine and
+            construct a vision in three days instead of three years was too
+            enticing to ignore.
           </p>
           <p className="mb-4">
             Once I completed my undergraduate degree, I began working as a
@@ -172,12 +171,11 @@ const IndexPage = () => {
             designing software for restaurants ever since.
           </p>
           <p className="mb-4">
-            I’m a{" "}
-            <span className="font-semibold text-gray-700">UX generalist</span>{" "}
-            with diverse experience across the design ecosystem. I'm equally
-            confident leading research initiatives, facilitating design
-            workshops, building prototypes, and even committing production
-            front-end code.
+            I’m a <b>UX generalist</b> with diverse experience across the design
+            ecosystem. I'm equally confident leading <b>research</b>{" "}
+            initiatives, facilitating <b>design workshops</b>, building{" "}
+            <b>prototypes</b>, contributing to <b>design systems</b>, and even
+            committing production <b>front-end code</b>.
           </p>
           <p className="mb-20">
             In my free time, I enjoy running,{" "}
