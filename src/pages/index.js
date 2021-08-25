@@ -132,9 +132,11 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-y-4 mb-8">
-            <h2 className="text-5xl font-title text-blue-900">About me</h2>
-            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs">
+          <div className="flex justify-between items-end mb-8">
+            <h2 className="text-4xl sm:text-5xl font-title text-blue-900">
+              About me
+            </h2>
+            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs pb-1">
               <a href="https://www.linkedin.com/in/stevenjbruno/">
                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
