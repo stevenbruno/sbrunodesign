@@ -85,7 +85,7 @@ const IndexPage = () => {
             </div>
             <a
               className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
-              href=""
+              href="./resume"
               target="_blank"
             >
               View resume <FontAwesomeIcon icon={faExternalLinkAlt} />
