@@ -29,9 +29,6 @@ module.exports = {
         fourrem: "4rem",
         sbxl: "5rem",
       },
-      screens: {
-        projwrap: "1168px",
-      },
       animation: {
         blob: "blob 9s linear infinite",
       },
@@ -64,8 +61,16 @@ module.exports = {
       },
       width: {
         fourhundo: "400%",
-        blaze: "420",
+        blaze: "420px",
+        project: "625px",
       },
+    },
+    screens: {
+      xs: "400px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024",
+      xl: "1280px",
     },
     variants: {
       extend: { backgroundColor: ["active"] },
