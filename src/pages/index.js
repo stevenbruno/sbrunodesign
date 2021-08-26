@@ -28,10 +28,6 @@ const IndexPage = () => {
   };
   return (
     <>
-      <div
-        className="bg-gradient-to-b 
-        from-babyblue w-screen h-supertall sm:h-4/5 absolute -z-10"
-      ></div>
       <div className="sm:text-lg text-gray-600">
         <Helmet>
           <meta charSet="utf-8" />
@@ -59,12 +55,13 @@ const IndexPage = () => {
         </Helmet>
         <StaticImage
           src="../images/headerbg2.svg"
-          className="absolute top-0 h-supertall xl:h-auto -z-10 opacity-60"
+          className="top-0 h-supertall xl:h-auto -z-10 opacity-40"
           placeholder="blurred"
+          style={{ position: "absolute" }}
         />
-        <header className="flex flex-col items-start mb-24 md:mb-40 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
+        <header className="flex flex-col items-start mb-24 md:mb-48 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
           <div className="mb-2">
-            <p className="text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-700 font-sans font-bold mb-2">
+            <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
               Steven Bruno
             </p>
             <p className="mb-8 max-w-xs tracking-wide sm:max-w-none sm:text-xl text-gray-600">
@@ -96,7 +93,7 @@ const IndexPage = () => {
                 Copied to clipboard
               </p>
               <button
-                className="bg-blue-500 bg-opacity-10 text-blue-800 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+                className="bg-blue-500 bg-opacity-10 text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
                 onClick={handleClick}
               >
                 <ClipboardCopyIcon className="h-5 w-5 inline" />{" "}
@@ -104,7 +101,7 @@ const IndexPage = () => {
               </button>
             </div>
             <a
-              className="bg-blue-500 bg-opacity-10 max-w-max text-blue-800 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+              className="bg-blue-500 bg-opacity-10 max-w-max text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
               href={resume}
               download="StevenBrunoResume"
             >
@@ -124,7 +121,7 @@ const IndexPage = () => {
             </div>
           </div>
         </header>
-        <div className="flex flex-col mx-auto gap-24 max-w-screen-md sm:gap-y-40 items-center mb-40 md:mb-56">
+        <div className="flex flex-col mx-auto gap-24 max-w-screen-md sm:gap-y-40 items-center mb-32 md:mb-48">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"
@@ -163,7 +160,7 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-600 mb-8">
+          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-700 mb-8">
             About me
           </h2>
           <p className="mb-4">
