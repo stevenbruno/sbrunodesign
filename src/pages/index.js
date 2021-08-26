@@ -169,7 +169,7 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-700 mb-8">
+          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-900 mb-8">
             About me
           </h2>
           <p className="mb-4">
