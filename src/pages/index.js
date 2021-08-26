@@ -119,12 +119,12 @@ const IndexPage = () => {
             </div>
           </div>
         </header>
-        <div className="flex flex-wrap max-w-full mx-auto gap-24 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
+        <div className="flex flex-col mx-auto gap-24 max-w-screen-md sm:gap-y-40 items-center mb-40 md:mb-56">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"
           >
-            <div className="w-11/12 max-w-lg mx-auto">
+            <div className="w-11/12 mx-auto">
               <StaticImage
                 src="../images/Payroll.png"
                 alt="Payroll Dashboard Mockup"
@@ -136,7 +136,7 @@ const IndexPage = () => {
             href="https://stevenbruno.notion.site/MyToast-24edb88d60264f21a54063c2899ea3fa"
             className="max-w-max"
           >
-            <div className="w-11/12 max-w-lg mx-auto">
+            <div className="w-11/12 mx-auto">
               <StaticImage
                 src="../images/MyToast2.png"
                 alt="MyToast App Mockup"
@@ -148,7 +148,7 @@ const IndexPage = () => {
             href="https://stevenbruno.notion.site/Toast-Tips-Manager-3336ba38ec2e4baf82ba7677b1d13bad"
             className="max-w-max"
           >
-            <div className="w-11/12 max-w-lg mx-auto">
+            <div className="w-11/12 mx-auto">
               <StaticImage
                 src="../images/Tips.png"
                 alt="Tips Manager Mockup"
@@ -156,14 +156,6 @@ const IndexPage = () => {
               />
             </div>
           </a>
-          <div className="hidden projwrap:block w-5/6 max-w-lg">
-            {" "}
-            <StaticImage
-              src="../images/Spacer.png"
-              alt="Blank space for layout"
-              placeholder="none"
-            />
-          </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
           <h2 className="text-xl sm:text-2xl font-sans font-bold text-indigo-500 mb-8">
