@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faCheck, faCopy, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import {
   ClipboardCopyIcon,
   LocationMarkerIcon,
@@ -57,12 +57,17 @@ const IndexPage = () => {
             rel="stylesheet"
           />
         </Helmet>
+        <StaticImage
+          src="../images/headerbg.svg"
+          className="absolute top-0 h-supertall xl:h-auto -z-10"
+          placeholder="blurred"
+        />
         <header className="flex flex-col items-start mb-24 md:mb-48 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
-          <div className="text-6xl sm:text-sbxl mb-2">
-            <p className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-sans font-bold mb-2">
+          <div className="mb-2">
+            <p className="text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 font-sans font-bold mb-2">
               Steven Bruno
             </p>
-            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none text-2xl text-gray-500">
+            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none sm:text-xl text-gray-500">
               Product Designer at{" "}
               <a
                 href="https://pos.toasttab.com/about"
@@ -106,7 +111,7 @@ const IndexPage = () => {
               <DownloadIcon className="h-5 w-5 inline" /> &nbsp;&nbsp;Download
               resume
             </a>
-            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-emailblue opacity-60 pb-1">
+            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-emailblue opacity-70 pb-1">
               <a href="https://www.linkedin.com/in/stevenjbruno/">
                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
