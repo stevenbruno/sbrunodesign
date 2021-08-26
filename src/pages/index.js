@@ -6,6 +6,11 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCheck, faCopy, faDownload } from "@fortawesome/free-solid-svg-icons";
+import {
+  ClipboardCopyIcon,
+  LocationMarkerIcon,
+} from "@heroicons/react/outline";
+import { DownloadIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import resume from "../images/StevenBruno_Resume_8:21.pdf";
@@ -47,34 +52,36 @@ const IndexPage = () => {
             href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+          />
         </Helmet>
-        <header className="flex flex-col items-center mb-24 md:mb-48 pt-32 lg:pr-12 pb-16">
+        <header className="flex flex-col items-start mb-24 md:mb-48 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
           <div className="text-6xl sm:text-sbxl mb-2">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-title">
+            <p className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 font-sans font-bold mb-2">
               Steven Bruno
-            </span>
-          </div>
-          <p className="mb-8 text-center max-w-xs tracking-wide px-2 sm:px-4 sm:max-w-none text-xl text-gray-500 italic">
-            Product Designer @{" "}
-            <a
-              href="https://pos.toasttab.com/about"
-              className="toast hover:text-toast"
-            >
-              Toast
-            </a>{" "}
-            <span className="hidden sm:inline">
-              <span className="text-gray-400">&nbsp;•&nbsp;</span> based in NYC
-            </span>
-          </p>
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mx-auto">
-            <div className="flex flex-col items-center">
-              <button
-                className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
-                onClick={handleClick}
+            </p>
+            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none text-2xl text-gray-500">
+              Product Designer at{" "}
+              <a
+                href="https://pos.toasttab.com/about"
+                className="toast hover:text-toast"
               >
-                <FontAwesomeIcon icon={faCopy} />{" "}
-                &nbsp;&nbsp;sbruno636@gmail.com
-              </button>
+                Toast
+              </a>{" "}
+              <div className="inline-flex items-center gap-1">
+                <span className="text-gray-400">
+                  &nbsp;&nbsp;//&nbsp;&nbsp;
+                </span>{" "}
+                <LocationMarkerIcon className="h-5 w-5 inline" />
+                NYC
+              </div>
+            </p>
+          </div>
+
+          <div className="flex flex-col mb-4 gap-6">
+            <div className="flex flex-col items-start gap-2">
               <p
                 className={`text-sm text-purple-700 ${
                   clicked ? "visible" : "invisible"
@@ -83,14 +90,33 @@ const IndexPage = () => {
                 <FontAwesomeIcon icon={faCheck} className="text-purple-600" />{" "}
                 Copied to clipboard
               </p>
+              <button
+                className="bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+                onClick={handleClick}
+              >
+                <ClipboardCopyIcon className="h-5 w-5 inline" />{" "}
+                &nbsp;&nbsp;sbruno636@gmail.com
+              </button>
             </div>
             <a
-              className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
+              className=" bg-emailbg max-w-max text-emailblue hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
               href={resume}
               download="StevenBrunoResume"
             >
-              <FontAwesomeIcon icon={faDownload} /> &nbsp;&nbsp;Download resume
+              <DownloadIcon className="h-5 w-5 inline" /> &nbsp;&nbsp;Download
+              resume
             </a>
+            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-emailblue opacity-60 pb-1">
+              <a href="https://www.linkedin.com/in/stevenjbruno/">
+                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+              </a>
+              <a href="https://dev.to/stevenbruno">
+                <FontAwesomeIcon icon={faDev} size="3x" />
+              </a>
+              <a href="https://github.com/stevenbruno">
+                <FontAwesomeIcon icon={faGithubSquare} size="3x" />
+              </a>
+            </div>
           </div>
         </header>
         <div className="flex flex-wrap max-w-full mx-auto gap-24 sm:gap-y-24 justify-center items-center mb-40 md:mb-56">
@@ -140,22 +166,9 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <div className="flex justify-between items-end mb-8">
-            <h2 className="text-3xl sm:text-4xl font-title text-indigo-500">
-              About me
-            </h2>
-            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs pb-1">
-              <a href="https://www.linkedin.com/in/stevenjbruno/">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" />
-              </a>
-              <a href="https://dev.to/stevenbruno">
-                <FontAwesomeIcon icon={faDev} size="3x" />
-              </a>
-              <a href="https://github.com/stevenbruno">
-                <FontAwesomeIcon icon={faGithubSquare} size="3x" />
-              </a>
-            </div>
-          </div>
+          <h2 className="text-xl sm:text-2xl font-sans font-bold text-indigo-500 mb-8">
+            About me
+          </h2>
           <p className="mb-4">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}

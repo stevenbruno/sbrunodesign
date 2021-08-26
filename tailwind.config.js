@@ -58,7 +58,7 @@ module.exports = {
       },
       fontFamily: {
         serif: ["Cormorant", "ui-serif", "Georgia"],
-        sans: ["SF Pro Text", "ui-sans-serif", "system-ui"],
+        sans: ["Inter", "ui-sans-serif", "system-ui"],
         cursive: ["Allura", "ui-cursive"],
         title: ["Unna", "ui-cursive"],
       },

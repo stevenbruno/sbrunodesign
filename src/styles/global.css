@@ -4,7 +4,7 @@
 
 @layer utilities {
   .toast {
-    background-image: url("../../src/images/underline.png");
+    background-image: url("../../src/images/underline2.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 5px;
