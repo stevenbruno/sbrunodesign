@@ -54,8 +54,8 @@ const IndexPage = () => {
           />
         </Helmet>
         <StaticImage
-          src="../images/headerbg2.svg"
-          className="top-0 h-supertall xl:h-auto -z-10 opacity-40"
+          src="../images/headerbg.svg"
+          className="top-0 left-0 h-supertall md:h-hero xl:h-auto -z-10 opacity-40"
           placeholder="blurred"
           style={{ position: "absolute" }}
         />
