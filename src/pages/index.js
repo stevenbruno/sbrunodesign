@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faCopy } from "@fortawesome/free-regular-svg-icons";
-import { faCheck, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faCopy, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import resume from "../images/StevenBruno_Resume_8:21.pdf";
 
 config.autoAddCss = false;
 
@@ -72,7 +72,8 @@ const IndexPage = () => {
                 className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
                 onClick={handleClick}
               >
-                sbruno636@gmail.com <FontAwesomeIcon icon={faCopy} />
+                <FontAwesomeIcon icon={faCopy} />{" "}
+                &nbsp;&nbsp;sbruno636@gmail.com
               </button>
               <p
                 className={`text-sm text-purple-700 ${
@@ -85,10 +86,10 @@ const IndexPage = () => {
             </div>
             <a
               className="mb-2 bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-4 py-2 rounded-full text-sm font-medium"
-              href="./resume"
-              target="_blank"
+              href={resume}
+              download="StevenBrunoResume"
             >
-              View resume <FontAwesomeIcon icon={faExternalLinkAlt} />
+              <FontAwesomeIcon icon={faDownload} /> &nbsp;&nbsp;Download resume
             </a>
           </div>
         </header>
