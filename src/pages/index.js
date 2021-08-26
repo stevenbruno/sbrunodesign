@@ -109,13 +109,22 @@ const IndexPage = () => {
               resume
             </a>
             <div className="flex gap-3 text-sm md:text-xs text-blue-900 opacity-50 pb-1">
-              <a href="https://www.linkedin.com/in/stevenjbruno/">
+              <a
+                href="https://www.linkedin.com/in/stevenjbruno/"
+                className="hover:text-purple-900"
+              >
                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
-              <a href="https://dev.to/stevenbruno">
+              <a
+                href="https://dev.to/stevenbruno"
+                className="hover:text-purple-900"
+              >
                 <FontAwesomeIcon icon={faDev} size="3x" />
               </a>
-              <a href="https://github.com/stevenbruno">
+              <a
+                href="https://github.com/stevenbruno"
+                className="hover:text-purple-900"
+              >
                 <FontAwesomeIcon icon={faGithubSquare} size="3x" />
               </a>
             </div>
