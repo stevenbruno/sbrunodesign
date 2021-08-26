@@ -59,7 +59,7 @@ const IndexPage = () => {
           placeholder="blurred"
           style={{ position: "absolute" }}
         />
-        <header className="flex flex-col items-start mb-24 md:mb-48 pl-4 xs:pl-8 sm:pl-0 sm:w-project pt-24 sm:mx-auto">
+        <header className="flex flex-col items-start mb-48 md:mb-72 pl-8 xs:pl-12 md:pl-0 sm:w-project pt-16 sm:mx-auto">
           <div className="mb-2">
             <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
               Steven Bruno
@@ -130,7 +130,7 @@ const IndexPage = () => {
             </div>
           </div>
         </header>
-        <div className="flex flex-col mx-auto gap-24 max-w-screen-md sm:gap-y-40 items-center mb-32 md:mb-48">
+        <div className="flex flex-col mx-auto max-w-screen-md gap-16 sm:gap-32 items-center mb-24 md:mb-48">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
             className="max-w-max"
@@ -169,10 +169,10 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-900 mb-8">
+          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-900 mb-5">
             About me
           </h2>
-          <p className="mb-4">
+          <p className="mb-3">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
             <b>Northwestern University</b>. My grand visions of becoming an
@@ -205,7 +205,7 @@ const IndexPage = () => {
             , soccer, chess, and trying new restaurants. Recently, I've been
             diving deep into climate and crypto.
           </p>
-          <p className="mb-8 text-gray-400 italic">
+          <p className="mb-8 text-gray-500 text-sm italic">
             I designed and developed this website with Figma, React, Gatsby, and
             TailwindCSS. Let me know if you find any bugs. :)
           </p>
