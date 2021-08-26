@@ -58,16 +58,16 @@ const IndexPage = () => {
           />
         </Helmet>
         <StaticImage
-          src="../images/headerbg.svg"
-          className="absolute top-0 h-supertall xl:h-auto -z-10"
+          src="../images/headerbg2.svg"
+          className="absolute top-0 h-supertall xl:h-auto -z-10 opacity-60"
           placeholder="blurred"
         />
-        <header className="flex flex-col items-start mb-24 md:mb-48 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
+        <header className="flex flex-col items-start mb-24 md:mb-40 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
           <div className="mb-2">
-            <p className="text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 font-sans font-bold mb-2">
+            <p className="text-4xl sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-700 font-sans font-bold mb-2">
               Steven Bruno
             </p>
-            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none sm:text-xl text-gray-500">
+            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none sm:text-xl text-gray-600">
               Product Designer at{" "}
               <a
                 href="https://pos.toasttab.com/about"
@@ -96,7 +96,7 @@ const IndexPage = () => {
                 Copied to clipboard
               </p>
               <button
-                className="bg-emailbg text-emailblue hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+                className="bg-blue-500 bg-opacity-10 text-blue-800 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
                 onClick={handleClick}
               >
                 <ClipboardCopyIcon className="h-5 w-5 inline" />{" "}
@@ -104,14 +104,14 @@ const IndexPage = () => {
               </button>
             </div>
             <a
-              className=" bg-emailbg max-w-max text-emailblue hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+              className="bg-blue-500 bg-opacity-10 max-w-max text-blue-800 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
               href={resume}
               download="StevenBrunoResume"
             >
               <DownloadIcon className="h-5 w-5 inline" /> &nbsp;&nbsp;Download
               resume
             </a>
-            <div className="flex space-x-3 text-gray-400 text-sm md:text-xs text-emailblue opacity-70 pb-1">
+            <div className="flex gap-3 text-sm md:text-xs text-blue-900 opacity-50 pb-1">
               <a href="https://www.linkedin.com/in/stevenjbruno/">
                 <FontAwesomeIcon icon={faLinkedin} size="3x" />
               </a>
@@ -163,7 +163,7 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-xl sm:text-2xl font-sans font-bold text-indigo-500 mb-8">
+          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-600 mb-8">
             About me
           </h2>
           <p className="mb-4">
