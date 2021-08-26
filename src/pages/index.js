@@ -59,7 +59,7 @@ const IndexPage = () => {
           placeholder="blurred"
           style={{ position: "absolute" }}
         />
-        <header className="flex flex-col items-start mb-24 md:mb-48 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
+        <header className="flex flex-col items-start mb-24 md:mb-32 pt-24 lg:pr-12 pl-8 sm:pl-48 pb-16">
           <div className="mb-2">
             <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
               Steven Bruno
