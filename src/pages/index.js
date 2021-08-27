@@ -64,7 +64,7 @@ const IndexPage = () => {
             <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
               Steven Bruno
             </p>
-            <p className="mb-8 max-w-xs tracking-wide sm:max-w-none sm:text-xl text-gray-600">
+            <p className="mb-8 max-w-xs sm:max-w-none sm:text-xl text-gray-600">
               Product Designer at{" "}
               <a
                 href="https://pos.toasttab.com/about"
@@ -72,7 +72,7 @@ const IndexPage = () => {
               >
                 Toast
               </a>{" "}
-              <div className="inline-flex items-center gap-1">
+              <div className="hidden xs:inline-flex items-center gap-1">
                 <span className="text-gray-400">
                   &nbsp;&nbsp;//&nbsp;&nbsp;
                 </span>{" "}
