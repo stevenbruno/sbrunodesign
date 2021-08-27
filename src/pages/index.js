@@ -13,7 +13,7 @@ import {
 import { DownloadIcon } from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import resume from "../images/StevenBruno.pdf";
+import resume from "../images/Steven_Bruno_Resume.pdf";
 
 config.autoAddCss = false;
 
