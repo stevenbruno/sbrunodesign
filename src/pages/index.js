@@ -52,6 +52,12 @@ const IndexPage = () => {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
+          <meta
+            property="og:description"
+            content="Steven Bruno Design Portfolio"
+          />
+          <meta property="og:title" content="Steven Bruno" />
+          <meta property="og:url" content="https://stevenbruno.design/" />
         </Helmet>
         <StaticImage
           src="../images/headerbg.svg"

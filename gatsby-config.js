@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.stevenbruno.design",
     title: "Steven Bruno",
+    description: "Steven Bruno Design Portfolio",
+    url: "https://www.stevenbruno.design", // No trailing slash allowed!
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
