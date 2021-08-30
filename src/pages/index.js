@@ -57,11 +57,11 @@ const IndexPage = () => {
             content="Steven Bruno Design Portfolio"
           />
           <meta property="og:title" content="Steven Bruno" />
-          <meta property="og:url" content="https://stevenbruno.design/" />
+          <meta property="og:url" content="https://stevenbruno.design" />
         </Helmet>
         <StaticImage
           src="../images/headerbg.svg"
-          className="top-0 left-0 h-supertall md:h-hero xl:h-auto -z-10 opacity-40"
+          className="top-0 left-0 h-supertall xxl:h-auto -z-10 opacity-40"
           placeholder="blurred"
           style={{ position: "absolute" }}
         />

@@ -17,7 +17,7 @@ module.exports = {
       },
       height: {
         supertall: "520px",
-        hero: "600px",
+        hero: "560px",
         blaze: "420px",
       },
       colors: {
@@ -72,6 +72,7 @@ module.exports = {
       md: "768px",
       lg: "1024",
       xl: "1280px",
+      xxl: "1440px",
     },
     variants: {
       extend: { backgroundColor: ["active"] },
