@@ -17,7 +17,7 @@ module.exports = {
       },
       height: {
         supertall: "520px",
-        hero: "540px",
+        hero: "580px",
         blaze: "420px",
       },
       colors: {

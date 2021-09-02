@@ -62,7 +62,7 @@ const IndexPage = () => {
         </Helmet>
         <StaticImage
           src="../images/headerbg.svg"
-          className="top-0 left-0 h-supertall sm:h-hero -z-10 opacity-20"
+          className="top-0 left-0 h-supertall sm:h-hero -z-10 opacity-30 w-full"
           placeholder="blurred"
           alt="backgroundgradient"
           style={{ position: "absolute" }}
@@ -145,7 +145,7 @@ const IndexPage = () => {
             </div>
           </div>
         </header>
-        <ArrowDownIcon className="hidden md:block h-5 w-5 animate-bounce mx-auto text-blue-800 mb-32" />
+        <ArrowDownIcon className="hidden md:block h-5 w-5 animate-bounce mx-auto text-blue-800 mb-40" />
         <div className="flex flex-col mx-auto max-w-screen-md gap-16 sm:gap-32 items-center mb-24 md:mb-48">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
