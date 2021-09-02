@@ -31,28 +31,28 @@ module.exports = {
         sbxl: "5rem",
       },
       animation: {
-        blob: "blob 9s linear infinite",
+        blob: "blob 6s linear infinite",
       },
-      animation: {
-        gradient: "gradient 4s linear infinite",
-      },
+      // animation: {
+      //   gradient: "gradient 4s linear infinite",
+      // },
       keyframes: {
-        blob: {
-          "0%": { transform: "translate(0px, 0px) scale(1)" },
-          "25%": {
-            transform: "translate(300px, -500px) scale(1.3) skewY(15deg)",
-          },
-          "50%": { transform: "translate(760px, 0px) scale(1.6)" },
-          "75%": {
-            transform: "translate(400px, 240px) scale(1.3) skewY(-15deg)",
-          },
-          "100%": { transform: "translate(0px, 0px) scale(1)" },
-        },
-        gradient: {
-          "50%": {
-            color: "#2563EB",
-          },
-        },
+        // blob: {
+        //   // "0%": { transform: "translate(0px, 0px) scale(1)" },
+        //   // "20%": {
+        //   //   transform: "translate(-240px, 24px) scale(1)",
+        //   // },
+        //   // "40%": { transform: "translate(-120px, 48px) scale(1)" },
+        //   // "60%": { transform: "translate(-0px, 24px) scale(1)" },
+        //   // "80%": { transform: "translate(0px, 0px) scale(1)" },
+        //   from: { transform: "rotate(0deg) translateX(60px) rotate(0deg)" },
+        //   to: { transform: "rotate(360deg) translateX(60px) rotate(-360deg)" },
+        // },
+        // gradient: {
+        //   "50%": {
+        //     color: "#2563EB",
+        //   },
+        // },
       },
       fontFamily: {
         serif: ["Cormorant", "ui-serif", "Georgia"],

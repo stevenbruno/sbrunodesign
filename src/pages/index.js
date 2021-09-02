@@ -7,6 +7,7 @@ import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import {
+  ArrowDownIcon,
   ClipboardCopyIcon,
   LocationMarkerIcon,
 } from "@heroicons/react/outline";
@@ -61,81 +62,92 @@ const IndexPage = () => {
         </Helmet>
         <StaticImage
           src="../images/headerbg.svg"
-          className="top-0 left-0 h-supertall md:h-hero xxl:h-auto -z-10 opacity-40"
+          className="top-0 left-0 h-supertall sm:h-hero -z-10 opacity-20"
           placeholder="blurred"
+          alt="backgroundgradient"
           style={{ position: "absolute" }}
         />
-        <header className="flex flex-col items-start mb-48 md:mb-72 pl-8 xs:pl-12 md:pl-0 sm:w-project pt-16 sm:mx-auto">
-          <div className="mb-2">
-            <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
-              Steven Bruno
-            </p>
-            <p className="mb-8 max-w-xs sm:max-w-none sm:text-xl text-gray-600">
-              Product Designer at{" "}
-              <a
-                href="https://pos.toasttab.com/about"
-                className="toast hover:text-toast"
-              >
-                Toast
-              </a>{" "}
-              <div className="hidden xs:inline-flex items-center gap-1">
-                <span className="text-gray-400">
-                  &nbsp;&nbsp;//&nbsp;&nbsp;
-                </span>{" "}
-                <LocationMarkerIcon className="h-5 w-5 inline" />
-                NYC
-              </div>
-            </p>
-          </div>
-
-          <div className="flex flex-col mb-4 gap-6">
-            <div className="flex flex-col items-start gap-2">
-              <p
-                className={`text-sm text-purple-700 ${
-                  clicked ? "visible" : "invisible"
-                }`}
-              >
-                <FontAwesomeIcon icon={faCheck} className="text-purple-600" />{" "}
-                Copied to clipboard
+        {/* <div className="absolute -z-9 top-0 w-full h-hero">
+          <div className="absolute animate-blob bottom-0 right-56 w-64 h-64 blur-2xl filter opacity-50 bg-purple-200 rounded-full mix-blend-multiply"></div>
+          <div className="absolute animate-blob bottom-8 right-72 w-64 h-64 blur-2xl filter opacity-50 bg-indigo-200 rounded-full mix-blend-multiply animation-delay-2000"></div>
+          <div className="absolute animate-blob bottom-16 right-96 w-64 h-64 blur-2xl filter opacity-50 bg-blue-200 rounded-full mix-blend-multiply animation-delay-4000"></div>
+        </div> */}
+        <header
+          className="flex flex-col items-start mb-20 sm:mb-48  pt-24 pl-4 xs:pl-6 sm:pl-8 md:pl-0
+          w-project mx-auto"
+        >
+          <div className="sm:w-project mx-auto">
+            <div className="mb-2">
+              <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
+                Steven Bruno
               </p>
-              <button
-                className="bg-blue-500 bg-opacity-10 text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
-                onClick={handleClick}
-              >
-                <ClipboardCopyIcon className="h-5 w-5 inline" />{" "}
-                &nbsp;&nbsp;sbruno636@gmail.com
-              </button>
+              <p className="mb-8 max-w-xs sm:max-w-none sm:text-xl text-gray-600">
+                Product Designer at{" "}
+                <a
+                  href="https://pos.toasttab.com/about"
+                  className="toast hover:text-toast"
+                >
+                  Toast
+                </a>{" "}
+                <div className="hidden xs:inline-flex items-center gap-1">
+                  <span className="text-gray-400">
+                    &nbsp;&nbsp;//&nbsp;&nbsp;
+                  </span>{" "}
+                  <LocationMarkerIcon className="h-5 w-5 inline" />
+                  NYC
+                </div>
+              </p>
             </div>
-            <a
-              className="bg-blue-500 bg-opacity-10 max-w-max text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
-              href={resume}
-              download="StevenBrunoResume"
-            >
-              <DownloadIcon className="h-5 w-5 inline" /> &nbsp;&nbsp;Download
-              resume
-            </a>
-            <div className="flex gap-3 text-sm md:text-xs text-blue-900 opacity-50 pb-1">
+            <div className="flex flex-col mb-24 gap-6">
+              <div className="flex flex-col items-start gap-2">
+                <p
+                  className={`text-sm text-purple-700 ${
+                    clicked ? "visible" : "invisible"
+                  }`}
+                >
+                  <FontAwesomeIcon icon={faCheck} className="text-purple-600" />{" "}
+                  Copied to clipboard
+                </p>
+                <button
+                  className="bg-blue-500 bg-opacity-10 text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+                  onClick={handleClick}
+                >
+                  <ClipboardCopyIcon className="h-5 w-5 inline" />{" "}
+                  &nbsp;&nbsp;sbruno636@gmail.com
+                </button>
+              </div>
               <a
-                href="https://www.linkedin.com/in/stevenjbruno/"
-                className="hover:text-purple-900"
+                className="bg-blue-500 bg-opacity-10 max-w-max text-blue-800 text-opacity-80 hover:text-blue-900 active:bg-blue-300 px-2 pr-3 py-2 rounded-md text-sm font-medium"
+                href={resume}
+                download="StevenBrunoResume"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                <DownloadIcon className="h-5 w-5 inline" /> &nbsp;&nbsp;Download
+                resume
               </a>
-              <a
-                href="https://dev.to/stevenbruno"
-                className="hover:text-purple-900"
-              >
-                <FontAwesomeIcon icon={faDev} size="3x" />
-              </a>
-              <a
-                href="https://github.com/stevenbruno"
-                className="hover:text-purple-900"
-              >
-                <FontAwesomeIcon icon={faGithubSquare} size="3x" />
-              </a>
+              <div className="flex gap-3 text-sm md:text-xs text-blue-900 opacity-50 pb-1">
+                <a
+                  href="https://www.linkedin.com/in/stevenjbruno/"
+                  className="hover:text-purple-900"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                </a>
+                <a
+                  href="https://dev.to/stevenbruno"
+                  className="hover:text-purple-900"
+                >
+                  <FontAwesomeIcon icon={faDev} size="3x" />
+                </a>
+                <a
+                  href="https://github.com/stevenbruno"
+                  className="hover:text-purple-900"
+                >
+                  <FontAwesomeIcon icon={faGithubSquare} size="3x" />
+                </a>
+              </div>
             </div>
           </div>
         </header>
+        <ArrowDownIcon className="hidden md:block h-5 w-5 animate-bounce mx-auto text-blue-800 mb-32" />
         <div className="flex flex-col mx-auto max-w-screen-md gap-16 sm:gap-32 items-center mb-24 md:mb-48">
           <a
             href="https://stevenbruno.notion.site/Payroll-Redesign-8dca753b8ac24311baa079ace9a35e15"
