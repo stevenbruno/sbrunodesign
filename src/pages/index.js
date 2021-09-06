@@ -61,8 +61,8 @@ const IndexPage = () => {
           <meta property="og:url" content="https://stevenbruno.design" />
         </Helmet>
         <StaticImage
-          src="../images/headerbg.svg"
-          className="top-0 left-0 h-supertall sm:h-hero -z-10 opacity-30 w-full"
+          src="../images/headerbg2.svg"
+          className="h-0 sm:h-hero w-full -z-10"
           placeholder="blurred"
           alt="backgroundgradient"
           style={{ position: "absolute" }}
