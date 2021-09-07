@@ -6,12 +6,13 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { ClipboardCopyIcon } from "@heroicons/react/outline";
 import {
+  DownloadIcon,
   ArrowDownIcon,
-  ClipboardCopyIcon,
   LocationMarkerIcon,
-} from "@heroicons/react/outline";
-import { DownloadIcon } from "@heroicons/react/solid";
+  UserCircleIcon,
+} from "@heroicons/react/solid";
 import { StaticImage } from "gatsby-plugin-image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import resume from "../images/StevenBrunoResume_.pdf";
@@ -80,22 +81,24 @@ const IndexPage = () => {
             <p className="text-4xl sm:text-6xl text-gray-700 font-sans font-bold mb-2">
               Steven Bruno
             </p>
-            <p className="mb-8 max-w-xs sm:max-w-none sm:text-xl text-gray-600">
-              Product Designer at{" "}
-              <a
-                href="https://pos.toasttab.com/about"
-                className="toast hover:text-toast"
-              >
-                Toast
-              </a>{" "}
-              <div className="hidden xs:inline-flex items-center gap-1">
-                <span className="text-gray-400">
-                  &nbsp;&nbsp;//&nbsp;&nbsp;
-                </span>{" "}
-                <LocationMarkerIcon className="h-5 w-5 inline" />
-                NYC
+            <div className="mb-8 max-w-xs sm:max-w-none sm:text-xl text-gray-600 flex flex-col gap-x-5 sm:flex-row">
+              <div className="flex items-center gap-x-1">
+                <UserCircleIcon className="h-5 w-5 inline text-gray-500" />
+                <p>
+                  Product Designer at{" "}
+                  <a
+                    href="https://pos.toasttab.com/about"
+                    className="toast hover:text-toast"
+                  >
+                    Toast
+                  </a>
+                </p>
               </div>
-            </p>
+              <div className="flex items-center gap-x-1">
+                <LocationMarkerIcon className="h-5 w-5 inline text-gray-500" />
+                <p>NYC</p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col mb-24 gap-6">
             <div className="flex flex-col items-start gap-2">
@@ -185,17 +188,16 @@ const IndexPage = () => {
           </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
-          <h2 className="text-lg sm:text-xl font-sans font-bold text-indigo-900 mb-5">
+          <h2 className="text-lg sm:text-xl font-sans font-bold text-gray-900 mb-5">
             About me
           </h2>
           <p className="mb-3">
             I grew up in Los Angeles then moved to Chicago to study Civil
             Engineering and Architectural Design at{" "}
-            <b>Northwestern University</b>. My grand visions of becoming an
-            architect took a backseat once I discovered web design in my
-            computer science and HCI courses. The ability to imagine and
-            construct a vision in three days instead of three years was too
-            enticing to ignore.
+            <b>Northwestern University</b>. My visions of becoming an architect
+            took a backseat once I discovered web design in my computer science
+            and HCI courses. The ability to imagine and construct a vision in
+            three days instead of three years was too enticing to ignore.
           </p>
           <p className="mb-4">
             Once I completed my undergraduate degree, I began working as a
