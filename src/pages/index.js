@@ -186,6 +186,18 @@ const IndexPage = () => {
               />
             </div>
           </a>
+          <a
+            href="https://stevenbruno.notion.site/Artifice-VR-79b456fe62bc4df5bf447a4991861b33"
+            className="max-w-max"
+          >
+            <div className="w-11/12 mx-auto">
+              <StaticImage
+                src="../images/Artifice.png"
+                alt="Artifice VR Mockup"
+                placeholder="blurred"
+              />
+            </div>
+          </a>
         </div>
         <div className="mx-auto max-w-screen-sm px-4">
           <h2 className="text-lg sm:text-xl font-sans font-bold text-gray-900 mb-5">
