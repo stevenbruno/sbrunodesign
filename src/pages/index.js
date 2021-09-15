@@ -62,7 +62,7 @@ const IndexPage = () => {
           <meta property="og:url" content="https://stevenbruno.design" />
         </Helmet>
         <StaticImage
-          src="../images/headerbg2.svg"
+          src="../images/headerbg3.svg"
           className="h-0 sm:h-hero w-full -z-10"
           placeholder="blurred"
           alt="backgroundgradient"
